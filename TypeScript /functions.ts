@@ -26,3 +26,7 @@ console.log(add2(5,7,4,5,6,7))
 function getItems<Type>(items: Type[]): Type[]{
     return new Array<Type>().concat(items);
 }
+
+let result3 = getItems<number>([1,2,3,4,5]); // Replace <Type> with whatever datatype you are working with
+
+let result4 = getItems<string>(['1','2','3','4','5']);

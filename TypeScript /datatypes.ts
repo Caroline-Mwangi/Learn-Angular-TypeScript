@@ -41,10 +41,11 @@ console.log(sum);
 const enum Color {
   Red,
   Green,
-  Blue,
+  Blue = "Blue",
 }
 
 let c: Color = Color.Blue;
+console.log(`Enum: ${c}`);
 
 // Tuples
 
@@ -58,3 +59,5 @@ let note: any;
 
 note = "5";
 note = 5;
+
+// Void: No type is expected
